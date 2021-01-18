@@ -4,4 +4,4 @@ An embedded real-time control system for a parts sorting facility on a factory a
 The handling system consists of 2 conveyor belts, each allowing for the concurrent sorting of objects (parts). The system interfaces with the controller using the PC’s parallel port.
 
 
-![Conveyor](https://user-images.githubusercontent.com/46611428/104955277-ddd1b380-59c1-11eb-80b6-cb1dbcd4f227.png)
+                                      ![Conveyor](https://user-images.githubusercontent.com/46611428/104955277-ddd1b380-59c1-11eb-80b6-cb1dbcd4f227.png)
