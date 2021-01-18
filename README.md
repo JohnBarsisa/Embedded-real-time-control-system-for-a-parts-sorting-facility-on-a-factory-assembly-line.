@@ -14,4 +14,24 @@ The handling system consists of 2 conveyor belts, each allowing for the concurre
 
 The second sensor set features just one object detection sensor, and is used to count the parts collected at the end of each conveyor for quality control purposes.
 
+Basic Controller Requirements:
+The basic requirements for operation of the controller software are as follows:
+1.	The controller should be able to detect and distinguish between small and large objects present on each conveyor belt.
+2.	When a large object is detected on a conveyor, the respective gate should remain open to allow the large object to pass to the end of the conveyor.
+3.	When a small object is detected on a conveyor, the respective gate should close to route the small object off the conveyor.
+4.	The sorting gate should be opened once a small object has been routed off to allow for the correct routing of subsequent objects on the conveyor.
+5.	The controller should maintain a separate count of the number of small and large objects
+detected on each conveyor.
+6.	The controller should maintain a count of large objects collected at the end of each conveyor.
+7.	The controller should provide a simple text based user interface that allows the user to perform the following actions:
+
+i)	Display the total number of small objects detected for each conveyor.
+ii)	Display the total number of large objects detected for each conveyor.
+ 
+iii)	Display the total number of large objects collected for each conveyor.
+iv)	Reset the counter values for each conveyor.
+v)	Shutdown the controller application and free up any memory used by it.
+8.	When shutting down the controller following a user prompt, the sorting gates should be opened. The application should also delete all created data structures (including semaphores, queues, etc.) and OS tasks.
+
+
 
