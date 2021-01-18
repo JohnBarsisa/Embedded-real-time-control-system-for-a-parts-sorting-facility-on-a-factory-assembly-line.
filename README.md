@@ -15,6 +15,7 @@ The handling system consists of 2 conveyor belts, each allowing for the concurre
 The second sensor set features just one object detection sensor, and is used to count the parts collected at the end of each conveyor for quality control purposes.
 
 Basic Controller Requirements:
+
 The basic requirements for operation of the controller software are as follows:
 1.	The controller should be able to detect and distinguish between small and large objects present on each conveyor belt.
 2.	When a large object is detected on a conveyor, the respective gate should remain open to allow the large object to pass to the end of the conveyor.
@@ -32,6 +33,23 @@ iii)	Display the total number of large objects collected for each conveyor.
 iv)	Reset the counter values for each conveyor.
 v)	Shutdown the controller application and free up any memory used by it.
 8.	When shutting down the controller following a user prompt, the sorting gates should be opened. The application should also delete all created data structures (including semaphores, queues, etc.) and OS tasks.
+
+Conveyor timing parameters:
+
+To fulfil successfully the requirements of Section 3, you will need to know the timing parameters of the conveyor unit and the objects used on the conveyor:
+
+Conveyor parameter	Symbol
+Minimum duration for which a long object triggers both size detection sensors	T(detect)
+Minimum duration for which a long object triggers the count sensor	T(count)
+Time it takes for an object to reach the sorting gate from the second size sensor	T(gate)
+Minimum duration for which a sorting gate needs to remain closed to route an object
+off the conveyor	T(close)
+Time required to read size sensors (size sensor reading delay)	D(size)
+Time required to read count sensor (count sensor reading delay)	D(count)
+Time required to change the gate states (gate control delay)	D(gate)
+Time required to reset size sensors (size sensor reset time)	R(size)
+Time required to reset count sensor (count sensor reset time)	R(count)
+
 
 
 
