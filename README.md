@@ -51,5 +51,6 @@ Time required to reset size sensors (size sensor reset time)	R(size)
 Time required to reset count sensor (count sensor reset time)	R(count)
 
 
+![Conveyor2](https://user-images.githubusercontent.com/46611428/104955624-56d10b00-59c2-11eb-8d52-ca64a5225371.png)
 
 
