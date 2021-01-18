@@ -1,0 +1,2 @@
+# Embedded-real-time-control-system-for-a-parts-sorting-facility-on-a-factory-assembly-line.
+An embedded real-time control system for a parts sorting facility on a factory assembly line was developed. The sorting facility consists of two conveyors that operate concurrently. The computing platform used for the controller is an embedded PC104 single board computer, running the VxWorks real-time operating system. The controller software should be implemented using the WindRiver Workbench software development tools and be written in the C or C++ programming language 
